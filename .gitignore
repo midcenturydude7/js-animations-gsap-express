@@ -22,6 +22,10 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 
+# Config files
+*config.js
+jsconfig.json
+
 # Logs
 logs
 *.log
