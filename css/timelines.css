@@ -1,40 +1,68 @@
 body {
-  color:white;
-  font-family: 'Kanit', sans-serif;
-  background:#020202;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  background: #020202;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-#demo {
-  overflow:hidden;
-  position:relative;
-  width:800px;
-  height:410px;
-  border:1px solid #333;
-  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png);
 
+#wrapper {
+  /* visibility: hidden; */
+  width: 800px;
+  height: 450px;
+  text-align: center;
+}
+
+#demo {
+  top: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+  height: 410px;
+  border: 1px solid #333;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png);
 }
 
 #title {
-  position:absolute;
-  top:120px;
-  left:40px;
+  position: absolute;
+  top: 120px;
+  left: 40px;
 }
 
 #freds {
-  position:absolute;
-  top:250px;
-  left:20px;
+  position: absolute;
+  top: 250px;
+  left: 20px;
 }
 
 #freds img {
-  width:122px;
+  width: 122px;
 }
 
 #time {
-  position:absolute;
-  top:25px;
-  right:0;
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+#nav {
+  margin-top: 20px;
+}
+
+button {
+  border-radius: 10px;
+  background: #fc3;
+  color: #06c;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  background-color: white;
 }
