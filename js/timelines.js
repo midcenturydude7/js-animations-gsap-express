@@ -10,11 +10,11 @@ const animation = gsap
   .from("#title", { opacity: 0, scale: 0, ease: "back" })
   .from(
     "#freds img",
-    { y: 160, stagger: 0.25, duration: 0.8, ease: "back" },
+    { y: 160, stagger: 0.5, duration: 0.8, ease: "back" },
     "+=0.5"
   )
-  .add("#test")
-  .from("#time", { xPercent: 100, duration: 1 });
+  .add("test")
+  .from("#time", { xPercent: 100, duration: 1, ease: "bounce" });
 
 document.getElementById("play").onclick = () => animation.play();
 document.getElementById("pause").onclick = () => animation.pause();
