@@ -1,6 +1,16 @@
 const button = document.querySelector(".button");
 const bg = document.querySelector(".bg");
 
+const tweenInFull = gsap.fromTo(
+  bg,
+  { scale: 0, duration: 1 },
+  { scale: 1, ease: "circ", paused: true }
+);
+
 button.addEventListener("mouseenter", () => {
-  gsap.from(bg, { scale: 0, duration: 1, ease: "circ" });
+  tweenInFull.restart();
+});
+
+button.addEventListener("mouseleave", () => {
+  tweenInFull.reverse();
 });
