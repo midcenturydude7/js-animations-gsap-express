@@ -1,6 +1,7 @@
 const items = document.querySelectorAll(".item");
+const wrapper = document.querySelector(".wrapper");
 
-gsap.from(".wrapper", { autoAlpha: 0, duration: 1, delay: 2 });
+gsap.from(wrapper, { autoAlpha: 0, duration: 1, delay: 0.5 });
 
 items.forEach((item, index) => {
   // console.log(item, index);
