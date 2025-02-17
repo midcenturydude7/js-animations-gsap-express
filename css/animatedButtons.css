@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* height: 100%; */
+  margin: 0;
+  font-family: "Lobster", cursive;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100vh;
+}
+
+.dot {
+  height: 20px;
+  min-width: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.text {
+  color: #777;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.0125em;
+  font-size: 3rem;
+  white-space: nowrap;
+}
