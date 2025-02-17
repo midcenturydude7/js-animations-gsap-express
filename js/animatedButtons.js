@@ -2,10 +2,7 @@ const items = document.querySelectorAll(".item");
 const dots = document.querySelectorAll(".dot");
 const wrapper = document.querySelector(".wrapper");
 
-const tLine = gsap
-  .timeline()
-  .from(wrapper, { autoAlpha: 0, duration: 1, delay: 2 })
-  .from(dots, { stagger: 4 }, 5);
+gsap.from(wrapper, { autoAlpha: 0, duration: 1, delay: 0.25 });
 
 items.forEach((item, index) => {
   // console.log(item, index);
