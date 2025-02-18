@@ -49,3 +49,10 @@ body {
   white-space: nowrap;
   opacity: 0.75;
 }
+
+#practice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}

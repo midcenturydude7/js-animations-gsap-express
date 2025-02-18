@@ -1,3 +1,5 @@
+gsap.registerPlugin(MotionPathPlugin);
+
 const items = document.querySelectorAll(".item");
 const dots = document.querySelectorAll(".dot");
 const wrapper = document.querySelector(".wrapper");
@@ -25,3 +27,5 @@ items.forEach((item, index) => {
     tl.reverse();
   });
 });
+
+// gsap.to("#practice", { motionPath: { path: "#path" } });
